@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Duo Finanças que fortalecem o casal</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=DM+Sans:wght@300;400;500&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=DM+Sans:wght@300;400;500&display=swap"></noscript>
+  <style>
+    /* CSS crítico inline — above the fold */
+    :root { --rose:#D4537E; --rose-light:#FBEAF0; --rose-mid:#ED93B1; --rose-dark:#72243E; --teal:#1D9E75; --teal-light:#E1F5EE; --teal-dark:#085041; --ink:#1a1118; --ink-soft:#3d2d38; --muted:#7a6872; --surface:#fdfbfc; --border:rgba(212,83,126,0.12); --serif:'Instrument Serif',Georgia,serif; --sans:'DM Sans',system-ui,sans-serif; }
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    body{font-family:var(--sans);background:var(--surface);color:var(--ink);line-height:1.7;-webkit-font-smoothing:antialiased}
+    nav{position:sticky;top:0;z-index:100;background:rgba(253,251,252,0.92);backdrop-filter:blur(12px);border-bottom:1px solid var(--border);padding:16px 24px;display:flex;align-items:center;justify-content:space-between}
+    .hero{min-height:92vh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:80px 24px 60px;position:relative;overflow:hidden}
+    .hero-badge{display:inline-flex;align-items:center;gap:6px;background:var(--rose-light);color:var(--rose-dark);border:1px solid rgba(212,83,126,0.2);border-radius:99px;padding:6px 16px;font-size:13px;font-weight:500;margin-bottom:32px}
+    .hero-headline{font-family:var(--serif);font-size:clamp(38px,6vw,68px);line-height:1.1;color:var(--ink);max-width:820px;margin-bottom:24px}
+    .reveal{opacity:0;transform:translateY(24px);transition:opacity 0.6s ease,transform 0.6s ease}
+    .reveal.visible{opacity:1;transform:translateY(0)}
+  </style>
+  <link rel="preload" as="style" href="style.css" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="style.css"></noscript>
+  <meta name="theme-color" content="#D4537E">
+  <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+  <link rel="dns-prefetch" href="https://fonts.gstatic.com">
+  <link rel="preload" as="image" href="images/imagem-principal-duo.webp">
+</head>
+
+<body>
+
+  <!-- ── NAV ── -->
+  <nav>
+    <a href="#" class="nav-logo">
+      <div class="nav-mark">
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+          <rect width="32" height="32" rx="8" fill="#D4537E" />
+          <circle cx="12" cy="16" r="8" fill="white" fill-opacity="0.9" />
+          <circle cx="20" cy="16" r="8" fill="white" fill-opacity="0.55" />
+        </svg>
+      </div>
+      <span class="nav-name">Duo</span>
+    </a>
+    <a href="#planos" class="nav-cta">Começar agora</a>
+  </nav>
+
+  <!-- ── HERO ── -->
+  <div class="hero">
+    <img src="images/imagem-principal-duo.webp" alt="imagem-produtos" style="
+          width: clamp(200px, 60vw, 300px);
+        " onerror="this.parentElement.style.display='none'" fetchpriority="high" loading="eager" decoding="async" />
+
+    <h1 class="hero-headline">
+      Seu relacionamento merece<br>
+      não quebrar por causa de <em>dinheiro.</em>
+    </h1>
+
+    <p class="hero-sub">
+      O Duo é o app que faz o casal parar de brigar por dinheiro
+      sem planilha, sem julgamento, sem segredo. Só os dois, alinhados.
+    </p>
+
+    <div class="hero-actions">
+      <a href="#planos" class="btn-primary">Quero começar com meu parceiro(a)</a>
+    </div>
+
+    <div class="hero-trust">
+      <span class="stars">★★★★★</span>
+      <span>+1.200 casais já pararam de brigar por dinheiro</span>
+    </div>
+  </div>
+
+  <!-- ── PAIN ── -->
+  <div class="pain-section">
+    <div class="pain-inner">
+      <div class="imagens-de-noticias">
+        <img src="images/noticia-1.webp" alt="Matéria jornalística sobre casais e dinheiro" style="
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          display: block;
+          border-radius: 20px;
+        " srcset="images/noticia-1.webp 800w, images/noticia-1-sm.webp 300w" sizes="(max-width: 600px) 288px, 288px" loading="lazy" decoding="async" />
+        <img src="images/noticia-2.webp" alt="Matéria jornalística sobre casais e dinheiro" style="
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          display: block;
+          border-radius: 20px;
+        " srcset="images/noticia-2.webp 800w, images/noticia-2-sm.webp 300w" sizes="(max-width: 600px) 288px, 288px" loading="lazy" decoding="async" />
+      </div>
+
+      <h2 class="pain-title">
+        Você ama seu parceiro.<br>
+        Mas o <em>dinheiro</em> às vezes parece querer destruir tudo.
+      </h2>
+
+      <div class="stats-grid reveal">
+        <div class="stat-cell">
+          <div class="stat-number">53%</div>
+          <div class="stat-desc">dos casais brasileiros apontam o dinheiro como principal causa de briga no
+            relacionamento</div>
+        </div>
+        <div class="stat-cell">
+          <div class="stat-number">49%</div>
+          <div class="stat-desc">dos parceiros já esconderam um problema financeiro um do outro sem contar para ninguém
+          </div>
+        </div>
+        <div class="stat-cell">
+          <div class="stat-number">41%</div>
+          <div class="stat-desc">tiveram o nome negativado por causa de dívidas do próprio relacionamento</div>
+        </div>
+        <div class="stat-cell">
+          <div class="stat-number">1 em 3</div>
+          <div class="stat-desc">separações tem raíz financeira não em falta de amor, mas em falta de alinhamento</div>
+        </div>
+      </div>
+
+      <p class="pain-cta-text">
+        O problema não é que vocês não se amam.<br>
+        O problema é que <strong>nunca tiveram a ferramenta certa</strong> para falar de dinheiro sem transformar a
+        conversa em briga.<br><br>
+        É exatamente isso que o Duo resolve.
+      </p>
+    </div>
+  </div>
+
+  <!-- ── SOLUTION ── -->
+  <section id="como-funciona">
+    <div class="solution-grid">
+      <div>
+        <h2 class="section-title">Finanças que unem. Não que separam.</h2>
+        <p class="section-body" style="margin-bottom: 44px;">
+          O Duo não é mais um app de planilha digital. É o espaço compartilhado onde o casal tem transparência, metas e
+          conversas sobre dinheiro sem precisar ser especialista em finanças.
+        </p>
+
+        <div class="solution-features">
+          <div class="feature-row reveal">
+            <div class="feature-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
+              </svg>
+            </div>
+            <div>
+              <div class="feature-title">Dashboard compartilhado em tempo real</div>
+              <div class="feature-desc">Os dois veem tudo ao mesmo tempo. Sem surpresas, sem segredos. O que entra, o
+                que sai, e onde está indo o dinheiro de vocês.</div>
+            </div>
+          </div>
+
+          <div class="feature-row reveal">
+            <div class="feature-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 11.08V12a10 10 0 11-5.93-9.14" />
+                <polyline points="22 4 12 14.01 9 11.01" />
+              </svg>
+            </div>
+            <div>
+              <div class="feature-title">Metas visuais dos sonhos do casal</div>
+              <div class="feature-desc">Viagem, apartamento, reserva de emergência. Criem juntos, acompanhem juntos. Ver
+                o progresso muda a relação com o dinheiro e com o parceiro.</div>
+            </div>
+          </div>
+
+          <div class="feature-row reveal">
+            <div class="feature-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z" />
+              </svg>
+            </div>
+            <div>
+              <div class="feature-title">Reunião financeira mensal guiada</div>
+              <div class="feature-desc">Todo mês, o Duo guia o casal numa conversa de 10 minutos sobre dinheiro. Passo a
+                passo, sem constrangimento. Chega de "a gente precisa conversar sobre as contas".</div>
+            </div>
+          </div>
+
+          <div class="feature-row reveal">
+            <div class="feature-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path
+                  d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z" />
+              </svg>
+            </div>
+            <div>
+              <div class="feature-title">Divisão justa sem brigas</div>
+              <div class="feature-desc">Dividam contas fixas, gastos variáveis e despesas extras de forma clara e
+                combinada. Sem aquela conversa chata toda vez que chega o boleto.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="solution-mockup reveal">
+        <div class="mockup-header">
+          <div class="mockup-avatar">
+            <div class="avatar-chip" style="background:#D4537E; color:#fff;">A</div>
+            <div class="avatar-chip" style="background:#1D9E75; color:#fff;">R</div>
+          </div>
+          <div>
+            <div class="mockup-greeting"><strong>Ana &amp; Rafael</strong></div>
+            <div class="mockup-greeting">Olá, casal! 👋</div>
+          </div>
+        </div>
+
+        <div class="mockup-balance">R$ 3.840</div>
+        <div class="mockup-label">Disponível para vocês este mês</div>
+
+        <div class="progress-item">
+          <div class="progress-meta">
+            <span class="progress-name">Viagem para Portugal</span>
+            <span class="progress-pct">64%</span>
+          </div>
+          <div class="progress-bar">
+            <div class="progress-fill" style="width:64%"></div>
+          </div>
+        </div>
+
+        <div class="progress-item">
+          <div class="progress-meta">
+            <span class="progress-name">Reserva de emergência</span>
+            <span class="progress-pct">38%</span>
+          </div>
+          <div class="progress-bar">
+            <div class="progress-fill" style="width:38%; background:#1D9E75;"></div>
+          </div>
+        </div>
+
+        <div class="progress-item">
+          <div class="progress-meta">
+            <span class="progress-name">Novo sofá para a sala</span>
+            <span class="progress-pct">81%</span>
+          </div>
+          <div class="progress-bar">
+            <div class="progress-fill" style="width:81%"></div>
+          </div>
+        </div>
+
+        <div class="mockup-alert">
+          <div class="alert-icon">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z" />
+            </svg>
+          </div>
+          <div class="alert-text"><strong>Reunião do mês</strong> disponível agora. 10 min para dois.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── TESTIMONIALS ── -->
+  <div class="testimonials-bg">
+    <div class="testimonials-inner">
+      <h2 class="section-title" style="max-width:560px;">O que acontece quando o casal para de brigar por dinheiro</h2>
+
+      <div class="testimonials-grid">
+        <!-- Depoimento 1 -->
+        <div style="
+        border-radius: 20px;
+        overflow: hidden;
+        background: rgba(212,83,126,0.08);
+        border: 1px solid rgba(212,83,126,0.15);
+      ">
+          <img src="images/depoimento 1.webp" alt="Depoimento de casal"
+            style="width: 100%; height: 100%; object-fit: cover; display: block;" onerror="this.style.display='none'" loading="lazy" decoding="async" />
+        </div>
+
+        <!-- Depoimento 2 -->
+        <div style="
+        border-radius: 20px;
+        overflow: hidden;
+        background: rgba(212,83,126,0.08);
+        border: 1px solid rgba(212,83,126,0.15);
+      ">
+          <img src="images/depoimento 2.webp" alt="Depoimento de casal"
+            style="width: 100%; height: 100%; object-fit: cover; display: block;" onerror="this.style.display='none'" loading="lazy" decoding="async" />
+        </div>
+
+        <!-- Depoimento 3 -->
+        <div style="
+        border-radius: 20px;
+        overflow: hidden;
+        background: rgba(212,83,126,0.08);
+        border: 1px solid rgba(212,83,126,0.15);
+      ">
+          <img src="images/depoimento 3.webp" alt="Depoimento de casal"
+            style="width: 100%; height: 100%; object-fit: cover; display: block;" onerror="this.style.display='none'" loading="lazy" decoding="async" />
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── BONUSES ── -->
+  <section class="bonuses-section">
+    <h2 class="section-title">Tudo que vem junto com o Duo</h2>
+    <p class="section-body">Além do app, você recebe três bônus que amplificam os resultados do casal desde o primeiro
+      dia.</p>
+
+    <div class="bonuses-grid">
+      <div class="bonus-card reveal">
+        <div style="
+        width: 100%;
+        aspect-ratio: 1 / 1;
+        border-radius: 12px;
+        overflow: hidden;
+        background: var(--rose-light);
+        margin-bottom: 20px;
+        max-height: 220px;
+      ">
+          <img src="/images/1.webp" alt="Bônus 1"
+            style="width: 100%; height: 100%; object-fit: contain; display: block;"
+            srcset="/images/1.webp 500w, /images/1-sm.webp 385w"
+            sizes="(max-width: 600px) 100vw, 385px"
+            loading="lazy" decoding="async"
+            onerror="this.parentElement.style.background='var(--rose-light)'; this.style.display='none'" />
+        </div>
+        <div class="bonus-tag">Bônus 1</div>
+        <h3 class="bonus-title">O Acelerador de Metas</h3>
+        <p class="bonus-desc">Descubra como fazer o dinheiro que vocês já guardam trabalhar por vocês. Investimentos
+          seguros, rentáveis e escolhidos pelo prazo de cada sonho. A viagem e o apartamento podem chegar antes do que
+          imaginam.</p>
+        <div class="bonus-value">Valor: <s>R$97</s> incluso no plano</div>
+      </div>
+
+      <div class="bonus-card reveal">
+        <div style="
+        width: 100%;
+        aspect-ratio: 1 / 1;
+        border-radius: 12px;
+        overflow: hidden;
+        background: var(--rose-light);
+        margin-bottom: 20px;
+        max-height: 220px;
+      ">
+          <img src="/images/2.webp" alt="Bônus 2"
+            style="width: 100%; height: 100%; object-fit: contain; display: block;"
+            srcset="/images/2.webp 500w, /images/2-sm.webp 385w"
+            sizes="(max-width: 600px) 100vw, 385px"
+            loading="lazy" decoding="async"
+            onerror="this.parentElement.style.background='var(--rose-light)'; this.style.display='none'" />
+        </div>
+        <div class="bonus-tag">Bônus 2</div>
+        <h3 class="bonus-title">Guia "Conversas difíceis sobre dinheiro"</h3>
+        <p class="bonus-desc">Um guia prático com roteiros e scripts para as conversas que o casal sempre adiou: dividir
+          dívidas, falar sobre salário, combinar gastos pessoais e planejar o futuro sem brigar.</p>
+        <div class="bonus-value">Valor: <s>R$67</s> incluso no plano</div>
+      </div>
+
+      <div class="bonus-card reveal">
+        <div style="
+        width: 100%;
+        aspect-ratio: 1 / 1;
+        border-radius: 12px;
+        overflow: hidden;
+        background: var(--rose-light);
+        margin-bottom: 20px;
+        max-height: 220px;
+      ">
+          <img src="/images/3.webp" alt="Bônus 3"
+            style="width: 100%; height: 100%; object-fit: contain; display: block;"
+            srcset="/images/3.webp 500w, /images/3-sm.webp 385w"
+            sizes="(max-width: 600px) 100vw, 385px"
+            loading="lazy" decoding="async"
+            onerror="this.parentElement.style.background='var(--rose-light)'; this.style.display='none'" />
+        </div>
+        <div class="bonus-tag">Bônus 3</div>
+        <h3 class="bonus-title">Casal Sem Conflitos</h3>
+        <p class="bonus-desc">Técnicas simples para o casal comunicar melhor, resolver diferenças sem acumular mágoa e
+          manter a relação leve no dia a dia. O que muitos casais só aprendem depois de anos, vocês terão desde o
+          início.</p>
+        <div class="bonus-value">Valor: <s>R$57</s> incluso no plano</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── PRICING ── -->
+  <section class="pricing-section" id="planos">
+    <h2 class="section-title">Menos que o delivery de uma briga</h2>
+    <p class="section-body" style="margin: 0 auto;">Para os dois. Menos de R$1 por dia para um relacionamento saudável.
+    </p>
+
+    <div class="pricing-cards">
+      <div class="pricing-card featured reveal">
+        <img class="imagem-produtos" src="images/imagem-principal-duo.webp" alt="" style="
+          width: clamp(200px, 60vw, 300px);
+        " loading="lazy" decoding="async">
+        <div class="plan-name">Mensal</div>
+        <div class="plan-price">R$27</div>
+        <div class="plan-period">por casal / mês</div>
+        <div class="plan-divider"></div>
+        <div class="plan-feature"><span class="plan-check">✓</span>Aplicativo Duo com duplo acesso</div>
+        <div class="plan-feature"><span class="plan-check">✓</span>30 dias de garantia</div>
+        <div class="plan-feature"><span class="plan-check">✓</span>O Acelerador de Metas</div>
+        <div class="plan-feature"><span class="plan-check">✓</span>Guia "Conversas difíceis sobre dinheiro"</div>
+        <div class="plan-feature"><span class="plan-check">✓</span>Casal Sem Conflitos</div>
+        <button class="btn-primary">Quero começar com meu parceiro(a)</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── GUARANTEE ── -->
+  <div class="guarantee-section">
+    <div class="guarantee-inner">
+      <div style="
+      width: 250px;
+      height: 250px;
+      margin: 0 auto 28px;
+      aspect-ratio: 1 / 1;
+    ">
+        <img src="images/selo-de-garantia.webp" alt="Selo de garantia de 30 dias" style="
+          width: 100%;
+          height: 100%;
+          object-fit: contain;
+          display: block;
+        " loading="lazy" decoding="async" />
+      </div>
+      <h2 class="guarantee-title">Garantia de paz financeira 30 dias</h2>
+      <p class="guarantee-text">
+        Se em 30 dias o Duo não ajudar vocês a ter pelo menos uma conversa sobre dinheiro sem brigar, devolvemos 100% do
+        valor. Sem perguntas. Sem formulário. Sem precisar justificar nada.<br><br>
+        O risco é todo nosso. O relacionamento é de vocês.
+      </p>
+    </div>
+  </div>
+
+  <!-- ── FINAL CTA ── -->
+  <div class="final-cta">
+    <h2 class="final-headline">
+      Agora é a vez de vocês<br>
+      construírem o futuro <em>juntos.</em>
+    </h2>
+    <p class="final-sub">
+      Cada mês que passa sem alinhamento financeiro é um mês que o dinheiro cresce entre vocês. Comecem hoje.
+    </p>
+    <a href="#planos" class="btn-primary" style="font-size:17px; padding:18px 44px;">Quero começar com meu
+      parceiro(a)</a>
+
+    <div class="final-note">
+      <span><span class="check-icon">✓</span> Acesso imediato para os dois</span>
+      <span><span class="check-icon">✓</span> Cancele quando quiser</span>
+      <span><span class="check-icon">✓</span> 30 dias de garantia</span>
+    </div>
+  </div>
+
+  <!-- ── FOOTER ── -->
+  <footer>
+    <p>© 2026 Duo Finanças que fortalecem o casal</a></p>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+
+</html>

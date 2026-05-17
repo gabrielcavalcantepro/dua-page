@@ -1,1 +1,1 @@
-# dua-page
+# duo-pagina-de-vendas-git
